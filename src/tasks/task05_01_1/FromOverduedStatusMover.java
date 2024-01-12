@@ -3,7 +3,7 @@ package tasks.task05_01_1;
 public class FromOverduedStatusMover extends BookMover {
     protected void moveToStatus(Book book, Status requestedStatus) {
         switch (requestedStatus) {
-            case BORROWED -> {
+            case ARCHIVED -> {
                 book.setStatus(requestedStatus);
             }
             default ->
