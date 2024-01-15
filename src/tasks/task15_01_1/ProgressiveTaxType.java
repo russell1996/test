@@ -1,3 +1,4 @@
+/*
 
 package tasks.task15_01_1;
 
@@ -15,3 +16,4 @@ public class ProgressiveTaxType extends TaxType {
     }
 }
 
+*/
