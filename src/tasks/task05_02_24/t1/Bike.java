@@ -2,8 +2,9 @@ package tasks.task05_02_24.t1;
 
 public class Bike extends Transport{
 
-    public Bike(String name, int countWheels, String transportType) {
-        super(name, countWheels, transportType);
+
+    public Bike(String name, int countWheels) {
+        super(name, countWheels, TransportType.BIKE);
     }
 
     @Override
