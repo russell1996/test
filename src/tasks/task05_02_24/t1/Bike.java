@@ -1,6 +1,6 @@
 package tasks.task05_02_24.t1;
 
-public class Bike extends Transport{
+public class Bike extends Transport {
 
 
     public Bike(String name, int countWheels) {
