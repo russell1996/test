@@ -3,12 +3,8 @@ package tasks.task05_02_24.hw1;
 import tasks.task05_02_24.t1.TransportType;
 
 public class SavingAccount extends Account {
-    CreditAccount creditAccount = new CreditAccount();
     int balance = 0;
 
-    public SavingAccount() {
-        super(AccountType.SavingAccount);
-    }
 
     @Override
     public void pay(int amount) {

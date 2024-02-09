@@ -3,10 +3,6 @@ package tasks.task05_02_24.hw1;
 public class CreditAccount extends Account {
     int balance = 0;
 
-    public CreditAccount() {
-        super(AccountType.CreditAccount);
-    }
-
     @Override
     public void pay(int amount) {
         balance -= amount;

@@ -4,8 +4,6 @@ import tasks.task05_02_24.t1.TransportType;
 
 public abstract class Account {
 
-    public Account(AccountType accountType) {
-    }
 
     public abstract void pay(int amount);
 

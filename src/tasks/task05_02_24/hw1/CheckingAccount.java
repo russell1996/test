@@ -3,9 +3,7 @@ package tasks.task05_02_24.hw1;
 public class CheckingAccount extends Account {
     private int balance;
 
-    public CheckingAccount() {
-        super(AccountType.CheckingAccount);
-    }
+
 
     @Override
     public void pay(int amount) {
