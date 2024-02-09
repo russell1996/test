@@ -12,7 +12,8 @@ public class SavingAccount extends Account {
 
     @Override
     public void pay(int amount) {
-        System.out.println("Платеж с данного счета запрещен");
+        System.out.println("Платеж со сберегательного счета запрещен. Текущий баланс сберегательного счета: " + balance + " тенге.");
+        System.out.println();
     }
 
     @Override
@@ -21,16 +22,20 @@ public class SavingAccount extends Account {
             balance -= amount;
             account.addMoney(amount);
         } else {
-            System.out.println("Недостаточно средств для перевода.");
+            System.out.println("Недостаточно средств для перевода. Текущий баланс сберегательного счета: " + balance + " тенге.");
         }
     }
 
     @Override
     public void addMoney(int amount) {
-        balance += amount;
-        System.out.println("Сберегательный счет пополен на сумму: " + amount);
-        System.out.println("Общая сумма на сберегательном счете: " + balance);
-        System.out.println();
-    }
+        if (balance + amount < 0) {
+            System.out.println("Пополение на сумму "  +amount + " тенге отклонен. Баланс сберегательного счета не может быть меньше нуля. Текущий баланс сберегательного счета: " + balance + " тенге.");
+            System.out.println();
+        } else {
+            balance += amount;
+            System.out.println("Сберегательный счет пополен на сумму: " + amount + " тенге. Текущий баланс сберегательного счета: " + balance + " тенге.");
+            System.out.println();
+        }
 
+    }
 }
