@@ -10,26 +10,26 @@ public class Main {
             validEvent(event);
         }
         System.out.println("Все события корректны");
-    }
 
+    }
 
     public static Movie[] getMovies() {
         return new Movie[]{
+                new Movie("Начало", 2010, 16),
+                new Movie("", 2010, 16)
 
         };
     }
 
     public static Theatre[] getTheatres() {
         return new Theatre[]{
+                new Theatre("Анна Каренина", 2017, 16)
         };
     }
 
-    public static void validEvent(Event event) {
-
-        if (event == null || event.title == null || event.releaseYear == 0 || event.age == 0) {
+    public static void validEvent(Event events) {
+        if (events == null || events.title == null || events.releaseYear == 0 || events.age == 0) {
             throw new RuntimeException("Данные не найдены");
         }
     }
-
-
 }
