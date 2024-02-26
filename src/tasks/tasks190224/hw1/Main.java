@@ -26,6 +26,7 @@ public class Main {
         checkObject(ball, "Мяч");
         checkObject(umbrella, "Зонт");
         checkObject(hat, "Шляпа");
+
     }
 
     private static void checkObject(Object object, String description) {
@@ -34,5 +35,6 @@ public class Main {
         } else {
             System.out.println('\'' + description + "' в бюро находок никто не приносил :(");
         }
+
     }
 }

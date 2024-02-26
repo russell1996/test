@@ -1,5 +1,13 @@
 package tasks.tasks190224.hw2;
 
+import tasks.tasks190224.hw1.Main;
+
+import java.time.LocalDate;
+import java.time.Month;
+import java.time.temporal.ChronoUnit;
+import java.util.Locale;
+import java.util.Scanner;
+
 public class Practice {
     public static void main(String[] args) {
         Song theRockBandSong = new Song("Popular Song", "The Rock Band", "John Doe");
@@ -63,5 +71,9 @@ public class Practice {
         } else {
             System.out.println("Что-то здесь не так. Подумайте над реализацией ещё немного.");
         }
+
+        var emoji = "-(";
+        System.out.println(emoji.replace("-(", ":-("));
+
     }
 }
