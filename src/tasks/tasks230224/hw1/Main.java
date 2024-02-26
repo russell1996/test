@@ -11,8 +11,6 @@ public class Main {
             validEvent(event);
         }
         System.out.println("Все события корректны");
-
-
     }
 
     public static Movie[] getMovies() {

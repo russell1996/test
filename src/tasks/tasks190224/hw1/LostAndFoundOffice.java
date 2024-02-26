@@ -6,6 +6,7 @@ public class LostAndFoundOffice {
     // создайте список things
     private final ArrayList<Object> things = new ArrayList<>();
 
+
     // реализуйте метод put()
     public void put(Object target) {
         if (target != null) {
