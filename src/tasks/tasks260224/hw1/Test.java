@@ -22,7 +22,6 @@ public class Test {
         System.out.println("Количество элементов: " + listSize);
         int min = listNumbers.get(0);
         int max = listNumbers.get(0);
-
         for (Integer i : listNumbers) {
             if (i < min) min = i;
             if (i > max) max = i;

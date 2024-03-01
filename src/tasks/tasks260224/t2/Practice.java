@@ -9,6 +9,8 @@ public class Practice {
         temperatures.add(12.4);
         temperatures.add(74.1);
         temperatures.add(45.0);
+        temperatures.add(92.4);
+        temperatures.add(1000.5);
         double max = 0;
         for (Double temperature : temperatures) {
             if (temperature > max) {
